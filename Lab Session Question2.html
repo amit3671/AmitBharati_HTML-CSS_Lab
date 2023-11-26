@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            position: absolute;
+            top: 5%;
+            left: 38%;
+            padding-left: 50px;
+            padding-top: 0px;
+            padding-bottom: 100px;
+            height: 400px;
+            background-color: whitesmoke;
+        }
+
+        div {
+            text-align: end;
+            background-color: grey;
+            padding: 10px;
+            margin: 15px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        #Bar_1 {
+            display: inline-block;
+            width: 20px;
+            background-color: grey;
+            animation: progress1 1500ms ease-in 1;
+            height: 30%;
+            animation-direction: reverse;
+            
+        }
+
+        #Bar_2 {
+            display: inline-block;
+            width: 20px;
+            background-color: grey;
+            animation: progress2 1500ms ease-in 1;
+            height: 40%;
+            animation-direction: reverse;
+        }
+
+        #Bar_3 {
+            display: inline-block;
+            width: 20px;
+            background-color: grey;
+            animation: progress3 1500ms ease-in 1;
+            height: 80%;
+            animation-direction: reverse;
+            
+        }
+
+        #Bar_4 {
+            display: inline-block;
+            width: 0px;
+            background-color: whitesmoke;
+            animation: progress4 15000ms ease-in 1;
+            height: 90%;
+            animation-direction: reverse;
+        }
+
+        @keyframes progress3 {
+            from {
+                height: 80%;
+            }
+
+            to {
+                height: 0%;
+            }
+        }
+
+        @keyframes progress1 {
+            from {
+                height: 30%;
+            }
+
+            to {
+                height: 0%;
+            }
+        }
+
+        @keyframes progress2 {
+            from {
+                height: 40%;
+            }
+
+            to {
+                height: 0%;
+            }
+        }
+
+        @keyframes progress4 {
+            from {
+                height: 90%;
+            }
+        }
+
+
+        p {
+            text-align: left;
+            position: fixed;
+            bottom: 0;
+            padding-bottom: 135px;
+        }
+
+        h1 {
+            text-align: left;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 70px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <article>
+
+        <div id="Bar_1">
+            <p>
+                30%</p>
+        </div>
+
+
+        <div id="Bar_2">
+            <p>
+                40%</p>
+        </div>
+        <div id="Bar_3">
+            <p>
+                80%</p>
+        </div>
+
+        <div id="Bar_4">
+            <p>
+            </p>
+        </div>
+
+        <h1>Bar Plot</h1>
+    </article>
+</body>
+
+</html>
